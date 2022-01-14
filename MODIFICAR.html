@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo">Saludos!</p>
+    <p id="parrafo2">Otro parrafo</p>
+
+
+
+
+
+<!-- siempre debajo de h1 y p por que no funciona si se pone arriba -->
+
+         let cabecero = document.getElementById('cabecero'); //si no se pone innerHTML no funciona por que no lo detecta (solo encuentra object)
+         console.log(`valor cabecero: ${cabecero.innerHTML}`);  // si no se pone innerHTML en la variable se puede meter en el console log .. + nombre.innerHTML
+          let parrafo = document.getElementById('parrafo');   //inner significa interno
+         console.log(`valor parrafo: ${parrafo.innerHTML}`);
+
+
+
+         
+         parrafo.innerHTML = 'Nuevo Valor del parrafo';  //esto es para modificar el valor de un elemento en este caso el del p
+         cabecero.innerHTML = 'Cambio de cabecero';
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo">Saludos!</p>
+    <p id="parrafo2">Otro parrafo</p>
+
+
+
+
+
+
+
+    <script>
+        let parrafos = document.getElementsByTagName('p');   //para recuperar el valor de todos los parrafos 
+        console.log(`No.parrafos: ${parrafos.length}`);
+        for(let i = 0; i<parrafos.length; i++) {
+            // console.log(parrafos[i].innerHTML);
+            console.log(`${i} - ${parrafos[i].innerHTML}`);
+        }
+        </script>
+</body>
+</html>
